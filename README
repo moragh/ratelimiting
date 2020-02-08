@@ -1,0 +1,19 @@
+Rate limiting app:
+
+Tools and techs:
+Spring Boot Application
+Redis using Redisson java client 
+RRateLimiter implemented by Redisson
+
+
+how to run:
+docker-compose build
+docker-compose up
+
+Then you can interact with the API (example: curl http://localhost:8080/hello)
+
+callouts:
+The rate limiting is done in filtering but the same functionality can be integrated into any API
+No tests yet, didn't had much time, sorry about that.
+
+

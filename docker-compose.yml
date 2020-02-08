@@ -1,0 +1,9 @@
+redis:
+  image: redis
+  
+driver:
+  build: .
+  ports:
+    - 8080:8080
+  links:
+    - redis
